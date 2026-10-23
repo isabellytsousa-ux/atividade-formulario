@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva de Hotel</title>
+  <style>
+    /* Estilização geral */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f0f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1a252f;
+      margin-bottom: 24px;
+    }
+
+    /* Classe exigida pelas regras */
+    .form-control {
+      margin-bottom: 18px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-control label {
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #333333;
+      font-size: 14px;
+    }
+
+    .form-control input,
+    .form-control select {
+      padding: 10px 12px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: border-color 0.2s;
+    }
+
+    .form-control input:focus,
+    .form-control select:focus {
+      border-color: #ff0022;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff0000;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #b3000f;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="#" method="POST">
+    <h2>Reserva de Hotel</h2>
+
+    <!-- Nome -->
+    <div class="form-control">
+      <label for="nome">Nome Completo</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+    </div>
+
+    <!-- E-mail -->
+    <div class="form-control">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+    </div>
+
+    <!-- Telefone -->
+    <div class="form-control">
+      <label for="telefone">Telefone / WhatsApp</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+    </div>
+
+    <!-- Data -->
+    <div class="form-control">
+      <label for="data-checkin">Data de Check-in</label>
+      <input type="date" id="data-checkin" name="data-checkin" required>
+    </div>
+
+    <!-- Senha -->
+    <div class="form-control">
+      <label for="senha">Senha da Conta de Hóspede</label>
+      <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+    </div>
+
+    <!-- Select com 4 opções referentes ao tema -->
+    <div class="form-control">
+      <label for="tipo-acomodacao">Tipo de Acomodação</label>
+      <select id="tipo-acomodacao" name="tipo-acomodacao" required>
+        <option value="" disabled selected>Selecione uma acomodação</option>
+        <option value="quarto-standard">Quarto Solteiro Standard</option>
+        <option value="quarto-casal">Quarto Casal Comfort</option>
+        <option value="suite-luxo">Suíte Luxo com Varanda</option>
+        <option value="suite-familia">Suíte Família Premium</option>
+      </select>
+    </div>
+
+    <button type="submit">Confirmar Reserva</button>
+  </form>
+
+</body>
+</html>
+Nome: Lucas Silva Prado
+
+E-mail: lucas.prado@gmail.com
+
+Telefone: (11) 98765-4321
+
+Data (Check-in): 20/11/2026
+Senha: Hotel#2026Pass      
